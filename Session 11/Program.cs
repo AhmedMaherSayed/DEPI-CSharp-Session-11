@@ -23,22 +23,35 @@
             #endregion
 
             #region Ananyomous Type
-            var person1 = new
-            {
-                Name = "Ahmed",
-                Age = 50,
-                Phone = 0111111111111,
-                Salary = 1_200
-            };
+            //var person1 = new
+            //{
+            //    Name = "Ahmed",
+            //    Age = 50,
+            //    Phone = 0111111111111,
+            //    Salary = 1_200
+            //};
 
-            var person2 = new
-            {
-                Name = "Ali",
-                Age = 50,
-                Phone = 0111111111111,
-                Salary = 1_200
-            };
-            Console.WriteLine(person1.Name);
+            //var person2 = new
+            //{
+            //    Name = "Ali",
+            //    Age = 50,
+            //    Phone = 0111111111111,
+            //    Salary = 1_200
+            //};
+            //Console.WriteLine(person1.Name);
+            #endregion
+
+            #region Extension Methods
+            //bool isGreaterThan = StringHelper.IsLongerThan("Ahmed", 13);
+            //Console.WriteLine(isGreaterThan);
+
+            var name = "Ahmed";
+
+            //var stringHelper = new StringHelper();
+
+            //bool isGreaterThan = stringHelper.IsLongerThan(name, 3);
+
+            Console.WriteLine(name.IsLongerThan(13));
             #endregion
         }
     }
