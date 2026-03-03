@@ -99,7 +99,11 @@ namespace Seesion11Tests
             // Assert
 
             // Act & Assert
-            Assert.Throws<DivideByZeroException>(() => _calculator.Divide(a, b));
+            Assert.Throws<DivideByZeroException>(() =>
+            {
+                return _calculator.Divide(a, b);
+              }
+            );
         }
 
     }

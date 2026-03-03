@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace Session_11
 { 
-    public class CalculatorApp
+    public class MathOperation
     {
-        public int Add(int a, int b)
+        public static int Add(int a, int b)
         {
             return a + b;
         }
-        public int Subtract(int a, int b)
+        public static int Subtract(int a, int b)
         {
             return a - b;
         }
  
-        public int Multiply(int a, int b)
+        public static int Multiply(int a, int b)
         {
             return a * b;
         }
-        public int Divide(int a, int b)
+        public static int Divide(int a, int b)
         {
             if (b == 0)
                 throw new DivideByZeroException();

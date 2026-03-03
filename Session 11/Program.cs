@@ -45,13 +45,75 @@
             //bool isGreaterThan = StringHelper.IsLongerThan("Ahmed", 13);
             //Console.WriteLine(isGreaterThan);
 
-            var name = "Ahmed";
+            //var name = "Ahmed";
 
             //var stringHelper = new StringHelper();
 
             //bool isGreaterThan = stringHelper.IsLongerThan(name, 3);
 
-            Console.WriteLine(name.IsLongerThan(13));
+            //Console.WriteLine(name.IsLongerThan(13));
+            #endregion
+
+            #region Delegates
+
+            var calculator = new Calculator();
+
+            //Operation addOperation = MathOperation.Add;
+            //Operation subOperation = MathOperation.Subtract;
+
+            //Console.WriteLine(calculator.Calculate(10, 5, addOperation));
+            //Console.WriteLine(calculator.Calculate(10, 5, subOperation));
+
+            //int result = calculator.Calculate(10, 5, (a, b) => a - b);
+            //Console.WriteLine(result);
+
+            //Operation op = MathOperation.Add;
+            //Console.WriteLine(calculator.Calculate(10, 5, op));
+
+            //op += MathOperation.Subtract;
+            //op += MathOperation.Multiply;
+            //op += MathOperation.Divide;
+
+            //var delgMathList = op.GetInvocationList();
+
+            //op -= MathOperation.Divide;
+            //Console.WriteLine(calculator.Calculate(10, 5, op));
+            //op -= MathOperation.Multiply;
+            //Console.WriteLine(calculator.Calculate(10, 5, op));
+            //op -= MathOperation.Subtract;
+            //Console.WriteLine(calculator.Calculate(10, 5, op));
+            //op -= MathOperation.Add;
+            //Console.WriteLine(calculator.Calculate(10, 5, op));
+            //foreach(var delg in delgMathList)
+            //{
+            //    Console.WriteLine(calculator.Calculate(10, 5, op));
+
+            //}
+
+            #region Built-in delegates
+
+            //1- Func<in T1,in T2, ...., out TResult>
+
+            //Func<int, int, int> add = (a, b) => a + b;
+            //Console.WriteLine(add(10, 5));
+
+            //Func<string> getMessage = () => "Hello";
+            //Console.WriteLine(getMessage.Invoke());
+
+            //2- Predicate<in T>
+            //Func<in T , bool out TResult>
+
+            //Predicate<int> isEven = (x) => x % 2 == 0;
+            ////Func<int, bool> isEven = (x) => x % 2 == 0;
+            //Console.WriteLine(isEven(10));
+
+
+            //3- Action<in T, ....>
+
+            Action<string> print = message => Console.WriteLine(message);
+
+            print("Hello");
+            #endregion
             #endregion
         }
     }
